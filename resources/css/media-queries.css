@@ -1,0 +1,59 @@
+/*------------------------------------*/
+/* SMALL SCREENS */
+/*------------------------------------*/
+
+@media only screen and (max-width : 768px) {
+	
+	 
+.navbar-right{
+	width: 100%;
+}
+	
+.navbar-nav{
+	margin:0;	
+}	
+	
+.nav>li{
+	margin:0;	
+}
+
+.home {
+    padding: 210px 0;
+    width: 100%;
+	height:auto;
+}
+ 
+.hero-text-box{
+	top: 50%;
+	transform: translate(-50%,-20%);
+	padding:0;
+}
+	
+h1{
+	font-size: 330%;	
+}	
+	
+.section-whoweare .geometric-pattern{
+	width: 150px;
+}
+
+.section-expertise .geometric-pattern{
+	width: 150px;
+}	
+
+.section-whoweare .copy{
+	font-size: 100%;
+    text-align: justify;
+}
+	
+.section-whoweare h3, .section-expertise h3{
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}	
+	
+footer p{
+	text-align:center;	
+}	
+	
+	
+}

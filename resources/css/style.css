@@ -1,0 +1,453 @@
+/*
+Orange Color: #293a8d
+*/
+
+
+/*------------------------------------*/
+/* BASIC SETUP */
+/*------------------------------------*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;	
+}
+
+html, body{
+	background-color:#fff;
+	color:#293a8d;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+/*------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*------------------------------------*/
+
+.row{ 
+	margin:0 auto;	
+}
+
+section{
+	position:relative;
+	padding: 90px 0;
+}
+
+.box{
+	padding:1%;	
+}
+
+.box p{
+	font-size:90%;
+	line-height:145%;
+}
+
+.clear-fix{
+	clear:both;	
+}
+
+.float-left{
+	float:left;	
+}
+
+.container-fluid{
+	padding:0;	
+}
+
+
+/* ICONS */
+
+
+
+/* PARAGRAPHS */
+
+
+
+/* BUTTONS */
+
+.btn:link,
+.btn:visited {
+	display:inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration:none;
+	border-radius:200px;
+	/*transition: background-color 0.2s, border 0.2s, color 0.2s;*/
+	transition: 0.2s;
+	
+}
+
+.btn-full:link,
+.btn-full:visited{
+	background-color:#e67e22;
+	border: 1px solid #e67e22;
+	color:#fff;
+	margin-right:15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+	border: 1px solid #e67e22;
+	color:#e67e22;
+}
+
+.btn:hover,
+.btn:active{
+	background-color:#cf6d17;
+	color:#fff;
+	border:1px solid #cf6d17;
+}
+
+.read-more-btn{
+	width: 230px;
+    text-align: center;
+    border: 1px solid #293a8d;
+    padding: 12px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100%;
+    margin: 50px auto 0 auto;
+	letter-spacing: 2px;
+}
+
+.read-more-btn:hover{
+	background-color:#293a8d;
+	color:#fff;
+	transition: 0.5s;
+}
+
+/* HEADINGS */
+
+h1,  
+h2,
+h3,
+h4,
+h5{
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+	text-transform:none;
+	margin-top:0;
+}
+
+h1{
+	margin:0 0 0 0;
+	color:#fff;
+	font-size: 620%;
+	letter-spacing: 5px;
+	text-align:center;	
+}
+
+h2{
+	font-size: 240%;
+	word-spacing: 1px;	
+	text-align:center;
+}
+
+
+h3{
+	font-size: 150%;
+	margin-bottom: 15px;
+	color:#b3b6b8;
+	text-align:center;
+}
+
+h4{
+	text-align: center;
+    font-weight: 300;
+    font-size: 120%;
+    margin: 20px 0;	
+}
+
+h5{
+	font-size: 100%;	
+}
+
+/*------------------------------------*/
+/* HEADER */
+/*------------------------------------*/
+
+.home{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(images/home-slider.jpg);
+	background-size:cover;
+	background-position:center;
+	background-attachment: fixed;
+	height: 100vh;	
+}
+
+.our-work{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(images/ourwork-slider.jpg);
+	background-size:cover;
+	background-position:center;
+	background-attachment: fixed;
+	height: 100vh;	
+}
+
+
+.hero-text-box{
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 90%;
+    padding: 0 10%;
+    transform: translate(-50%,-50%);
+} 
+
+.hero-text-box h3{ 
+	color:#fff;	
+	text-align:center;
+}
+
+nav{
+	background:#fff;
+	margin: 0 auto;
+    padding: 10px 20px;
+	width:100%;
+	z-index: 99999;
+	position:fixed;
+}
+
+.logo{
+	height:50px;
+	width:auto;
+	float:left;	
+}
+
+.navbar-default{
+	background-color: #ffffff;
+}
+
+.navbar-brand{
+	padding:0;
+}
+
+.navbar-right{
+	float:right;
+	margin-top: 8px;
+}
+
+.nav>li{
+	margin: 0px 15px;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color:#282828;
+	font-size:90%;
+	font-weight: 400;
+}
+
+.navbar-nav>li>a li{
+	display:inline-block;
+	margin-left: 25px;
+    font-weight: 500;
+    font-size: 85%;
+}
+
+.navbar-right a:link,
+.navbar-right a:visited{
+	padding:8px 0;
+	color:#282828;
+	text-decoration:none;
+	font-size: 90%;	
+	border-bottom: 2px solid transparent;
+	transition: 0.2s;
+}
+
+
+.navbar-right a:hover,
+.navbar-right a:active{
+	border-bottom: 2px solid #293a8d;
+}
+
+/*------------------------------------*/
+/* WHO WE ARE */
+/*------------------------------------*/
+
+.section-whoweare{
+	background:url(images/background-texture.jpg) repeat;
+}
+
+
+.section-whoweare .geometric-pattern{
+	position:absolute;
+	width:300px;
+	height:347px;
+	background:url(images/geometric-background.png) no-repeat;	
+	background-position:bottom left;
+	bottom: 0;
+    background-size: 80%;
+}
+
+.section-whoweare h3, .section-expertise h3{
+	letter-spacing:10px;
+	margin-bottom:70px;	
+}
+
+.section-whoweare .copy{
+	width:80%;
+	margin:0 auto;
+	line-height:145%;
+	text-align:left;	
+}
+
+/*------------------------------------*/
+/* EXPERTISE */
+/*------------------------------------*/
+
+.section-expertise .geometric-pattern{
+	position: absolute;
+    width: 300px;
+    height: 347px;
+    background: url(images/geometric-background.png) no-repeat;
+    background-position: top right;
+    right: 0;
+    top: 0;
+    background-size: 80%;
+}
+
+.expertise-icon-container{
+	width:100%;
+	margin:0 auto;
+}
+
+.expertise-outer-circle{
+	background: #283b8d;
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    position: relative;
+    margin: 0 auto;
+    border: 13px solid #23337f;
+}
+
+
+.expertise-inner-circle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -15px 0px 0px -15px;
+	
+}
+
+/*------------------------------------*/
+/* PRODUCT LOGOS */
+/*------------------------------------*/
+
+.product-logo-container{
+	width:90%;
+	margin:0 auto;
+	padding-top:10px;
+}
+
+/*------------------------------------*/
+/* FOOTER */
+/*------------------------------------*/
+
+footer{
+	background: #191919;
+	padding: 10px 0;	
+}
+
+.footer-container{
+	width:90%;
+	margin:0 auto;	
+}
+
+.footer-container p{
+	font-size: 70%;
+    color: #fff;	
+}
+
+.footer-social-icon{
+	display:inline;	
+	float:right;
+	margin-bottom:0;	
+}
+
+.footer-social-icon li{
+	list-style-type:none;
+	display:inline;	
+	margin: 0 8px;
+	float:left;
+}
+
+.footer-social-icon li i{
+	color:#8b8d90;	
+}
+
+/*------------------------------------*/
+/* OUR WORK */
+/*------------------------------------*/
+
+
+.section-ourwork{
+	padding:0;	
+}
+
+.section-our-work-description{
+	
+}
+
+
+.section-our-work-description .geometric-pattern{
+	position:absolute;
+	width:240px;
+	height:347px;
+	background:url(images/geometric-background.png) no-repeat;	
+	background-position:bottom left;
+	bottom: 0;
+    background-size: 80%;
+}
+
+.section-our-work-description h3, .section-our-work-description h3{
+	letter-spacing:10px;
+	margin-bottom:70px;	
+}
+
+.section-our-work-description .copy{
+	width:80%;
+	margin:0 auto;
+	line-height:145%;
+	text-align:left;	
+}
+
+.ourwork-box{
+	padding:50px;
+	background-color:#f8f8f8;	
+}
+
+.ourwork-box h5{
+	font-family: 'Ubuntu', sans-serif;
+	color:#000;
+	font-weight: 400;
+    margin: 10px 0;
+}
+
+.product-image{
+	margin: 10px 0;	
+}
+
+.product-image img{
+	margin:0 auto;	
+}
+
+.product-copy{
+	color:#000;	
+} 
+
+.white-bg{
+	background-color:#fff;	
+}
+
+.section-product-logos{
+	padding:40px 0;
+	background-color:#eaeaea;	
+}
+
+.owl-theme .owl-controls {
+	display: none  !important;
+}
+
+.owl-item .item{
+	text-align:center;	
+}
